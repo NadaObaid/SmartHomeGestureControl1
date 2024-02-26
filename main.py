@@ -82,11 +82,7 @@ for file in os.listdir(train_data_path):
         count = count + 1
 
 
-
-
-===========================================================================
-#cosine fct.
-
+#cosine fct.:
 
 def gesture_detection(gesture_folder_path, gesture_file_name, mid_frame_counter):
     video_feature = extract_feature(gesture_folder_path, gesture_file_name, mid_frame_counter)
