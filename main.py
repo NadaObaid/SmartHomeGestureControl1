@@ -112,8 +112,7 @@ test_data_path = "test/"
 test_count = 0
 with open('results.csv', 'w', newline='') as results_file:
     fields_names = [
-        'Gesture_Video_File_Name', 'Gesture_Name',
-        'Output_Label']
+        'Gesture_Video_File_Name']
     data_writer = csv.DictWriter(results_file, fieldnames=fields_names)
     data_writer.writeheader()
 
@@ -124,5 +123,4 @@ with open('results.csv', 'w', newline='') as results_file:
 
             data_writer.writerow({
                 'Gesture_Video_File_Name': test_file,
-                'Gesture_Name': recognized_gesture_detail.gesture_name,
-                'Output_Label': recognized_gesture_detail.output_label})
+                })
